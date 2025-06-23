@@ -3,6 +3,6 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Portfolio_Yoann_Gouarre_2025/', 
+  base: '/Portfolio_Yoann_Goumarre_2025/', 
   plugins: [vue()],
 })
