@@ -3,6 +3,5 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Portfolio_Yoann_Gouarre_2025/',
   plugins: [vue()],
 })
