@@ -1,27 +1,15 @@
 <template>
   <div class="container mt-5">
     <!-- Présentation -->
-    <div class="card mb-5">
-      <div class="card-body text-center">
-        <h1 class="card-title">Yoann Goumarre</h1>
-        <p class="card-text">
-          Je suis actuellement étudiant en deuxième année de BUT Informatique à
-          l’IUT2.
-          <br /><br />
-          Passionné par les nouvelles technologies et leur impact sur notre
-          société, j’aime expérimenter et apprendre en continu. Je m’intéresse
-          particulièrement au développement web, développement d’application, à
-          la data science et à l’intelligence artificielle. À travers ces
-          domaines, je cherche à créer des solutions innovantes et efficaces
-          pour les défis actuels.
-          <br /><br />
-          Dans ce portfolio, je vais vous partager les projets les plus
-          marquants de mes deux premières d’études, ainsi que mes réalisations
-          les plus récentes. Ces expériences ont enrichi mes compétences
-          techniques et ont renforcé ma passion pour l’informatique.
-        </p>
-      </div>
-    </div>
+    <div class="card p-4 mb-5" data-aos="fade-up">
+  <h1 class="card-title mb-3">Yoann Goumarre</h1>
+  <p>
+    Étudiant en 3<sup>e</sup> année de BUT Informatique à l’IUT2 de Grenoble, je me passionne pour le développement web, la conception d’interfaces interactives, l’expérience utilisateur, ainsi que les problématiques de déploiement et de performance. Mon parcours m’a permis de mener de nombreux projets variés : développement d’applications en Java, création d’API REST avec Node.js, refonte d’interfaces en Vue.js, développement mobile avec Flutter, et bien plus encore ...
+  </p>
+  <p>
+    Grâce à mon alternance chez Batiactu Groupe, j’ai pu mettre en pratique ces compétences dans un cadre professionnel, notamment en participant à la refonte d’un outil de chiffrage utilisé dans le bâtiment. Curieux, rigoureux et autonome, je m'investis pleinement dans chacun de mes projets. Ce portfolio vous présente les travaux que j’ai réalisés tout au long de mon cursus, illustrant à la fois mon évolution technique et ma capacité à travailler en équipe.
+  </p>
+</div>
 
     <!-- Carrousels -->
     <div class="mb-5">
@@ -343,5 +331,10 @@
 <script>
 export default {
   name: "Accueil",
-};
+  mounted() {
+    setTimeout(() => {
+      import('aos').then((AOS) => AOS.init({ once: false }))
+    }, 100)
+  }
+}
 </script>

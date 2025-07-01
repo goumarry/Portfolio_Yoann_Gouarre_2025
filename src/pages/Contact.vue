@@ -44,6 +44,19 @@
               <button type="submit" class="btn btn-primary w-100">Envoyer</button>
 
             </form>
+
+            <div class="mt-4 text-center">
+              <a href="https://www.linkedin.com/in/yoann-goumarre-a7b1532b2/?trk=people-guest_people_search-card" target="_blank" class="text-white me-3">
+                <i class="bi bi-linkedin fs-4"></i>
+              </a>
+              <a href="https://github.com/goumarry" target="_blank" class="text-white me-3">
+                <i class="bi bi-github fs-4"></i>
+              </a>
+              <a href="https://www.instagram.com/yoann.goums/?utm_source=ig_web_button_share_sheet" target="_blank" class="text-white">
+                <i class="bi bi-instagram fs-4"></i>
+              </a>
+            </div>
+
           </div>
         </div>
       </div>

@@ -7,5 +7,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './assets/styles.css';
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+AOS.init()
+
 
 createApp(App).use(router).mount('#app')

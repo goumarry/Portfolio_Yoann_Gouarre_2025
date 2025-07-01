@@ -3,7 +3,22 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="/">Mon Portfolio</a>
-        <div class="collapse navbar-collapse justify-content-center">
+
+        <!-- Bouton burger -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu principal -->
+        <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <router-link class="nav-link" to="/">Accueil</router-link>
@@ -34,7 +49,7 @@
             </li>
           </ul>
 
-          <!-- Switch jour/nuit -->
+          <!-- Bouton jour/nuit -->
           <button class="btn btn-outline-primary" @click="toggleTheme" :title="isDark ? 'Passer en mode jour' : 'Passer en mode nuit'">
             <i :class="isDark ? 'bi bi-sun' : 'bi bi-moon'"></i>
           </button>
@@ -45,6 +60,7 @@
     <router-view></router-view>
   </div>
 </template>
+
 
 
 <script>

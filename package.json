@@ -8,9 +8,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
-
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.6",
     "bootstrap-icons": "^1.13.1",
     "emailjs-com": "^3.2.0",
